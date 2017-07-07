@@ -1,0 +1,10 @@
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+
+dependencies {
+    compile "io.eventuate.client.java:eventuate-client-java-spring:$eventuateClientVersion"
+//    compile "io.eventuate.local.java:eventuate-local-java-jdbc:$eventuateLocalVersion"
+//    compile "io.eventuate.local.java:eventuate-local-java-embedded-cdc-autoconfigure:$eventuateLocalVersion"
+
+    compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+}

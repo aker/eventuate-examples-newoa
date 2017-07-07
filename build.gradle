@@ -1,0 +1,26 @@
+buildscript {
+    repositories {
+        maven {
+            url 'http://10.169.1.236:8081/content/groups/public/'
+        }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion")
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.0'
+}
+
+subprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        maven {
+            url 'http://10.169.1.236:8081/content/groups/public/'
+        }
+    }
+}

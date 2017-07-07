@@ -1,0 +1,3 @@
+include 'ermp-service'
+
+rootProject.name = 'eventuate-examples-newoa'
